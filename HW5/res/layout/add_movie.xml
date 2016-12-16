@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+   android:layout_width="match_parent" 
+   android:layout_height="wrap_content" android:layout_weight="1">
+   <LinearLayout android:id="@+id/linearLayout"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:orientation="vertical" android:padding="5dp">
+      <EditText android:id="@+id/titleEditText"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content" 
+         android:imeOptions="actionNext" android:hint="@string/hint_title"
+         android:inputType="textPersonName|textCapWords"></EditText>
+      <EditText android:id="@+id/yearEditText" 
+         android:layout_width="match_parent" 
+         android:layout_height="wrap_content" 
+         android:imeOptions="actionNext" android:hint="@string/hint_year" 
+         android:inputType="number"></EditText>
+      <EditText android:id="@+id/directorEditText"
+         android:layout_width="match_parent" 
+         android:layout_height="wrap_content" 
+         android:imeOptions="actionNext" android:hint="@string/hint_director"
+         android:inputType="textPersonName|textCapWords"></EditText>
+      <EditText android:id="@+id/movie_genreEditText" 
+         android:layout_width="match_parent" 
+         android:layout_height="wrap_content" 
+         android:imeOptions="actionNext" android:hint="@string/hint_movie_genre"
+         android:inputType="textPersonName|textCapWords"></EditText>
+      <EditText android:id="@+id/imdb_ratingEditText" 
+         android:layout_width="match_parent" 
+         android:layout_height="wrap_content" 
+         android:imeOptions="actionDone" android:hint="@string/hint_imdb_rating"
+         android:inputType="numberDecimal"></EditText>
+      <Button android:id="@+id/saveMovieButton" 
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_marginTop="15dp"
+         android:layout_gravity="center_horizontal"
+         android:text="@string/button_save_movie"></Button>
+   </LinearLayout>
+</ScrollView>

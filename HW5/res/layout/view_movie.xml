@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" 
+   android:layout_width="match_parent" 
+   android:layout_height="wrap_content" android:layout_weight="1">
+   <TableLayout android:layout_width="match_parent" 
+      android:layout_height="wrap_content"
+      android:stretchColumns="1" android:layout_margin="5dp">
+      <TableRow android:id="@+id/nameTableRow"
+         android:layout_width="match_parent" 
+         android:layout_height="wrap_content">
+         <TextView android:id="@+id/nameLabelTextView" 
+            style="@style/MovieLabelTextView"
+            android:text="@string/label_name"></TextView>
+         <TextView android:id="@+id/titleTextView" 
+            style="@style/MovieTextView"></TextView>
+      </TableRow>
+
+      <TableRow android:id="@+id/yearTableRow"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content">
+         <TextView android:id="@+id/yearLabelTextView" 
+            style="@style/MovieLabelTextView"
+            android:text="@string/label_year"></TextView>
+         <TextView android:id="@+id/yearTextView"
+            style="@style/MovieTextView"></TextView>
+      </TableRow>
+
+      <TableRow android:id="@+id/directorTableRow"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content">
+         <TextView android:id="@+id/directorLabelTextView" 
+            style="@style/MovieLabelTextView"
+            android:text="@string/label_director"></TextView>
+         <TextView android:id="@+id/directorTextView"
+            style="@style/MovieTextView"></TextView>
+      </TableRow>
+
+      <TableRow android:id="@+id/movie_genreTableRow"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content">
+         <TextView android:id="@+id/movie_genreLabelTextView" 
+            style="@style/MovieLabelTextView"
+            android:text="@string/label_movie_genre"></TextView>
+         <TextView android:id="@+id/movie_genreTextView"
+            style="@style/MovieTextView"></TextView>
+      </TableRow>
+
+      <TableRow android:id="@+id/imdb_ratingTableRow"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content">
+         <TextView android:id="@+id/imdb_ratingLabelTextView" 
+            style="@style/MovieLabelTextView"
+            android:text="@string/label_imdb_rating"></TextView>
+         <TextView android:id="@+id/imdb_ratingTextView"
+            style="@style/MovieTextView"></TextView>
+      </TableRow>
+      
+      <Button
+             android:id="@+id/trailerButton"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="Watch Trailer" />
+   </TableLayout>
+   
+</ScrollView>
